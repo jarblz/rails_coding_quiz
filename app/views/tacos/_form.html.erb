@@ -1,0 +1,33 @@
+<%= form_for(@taco) do |f| %>
+  <% if @taco.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@taco.errors.count, "error") %> prohibited this taco from being saved:</h2>
+
+      <ul>
+      <% @taco.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :meat %><br>
+    <%= f.number_field :meat %>
+  </div>
+  <div class="field">
+    <%= f.label :salsa %><br>
+    <%= f.check_box :salsa %>
+  </div>
+  <div class="field">
+    <%= f.label :rice %><br>
+    <%= f.check_box :rice %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
