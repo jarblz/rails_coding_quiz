@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20180410045418) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "tacos", force: :cascade do |t|
     t.text     "meat"
     t.boolean  "salsa"

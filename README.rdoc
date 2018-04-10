@@ -1,28 +1,35 @@
-== README
+# LD Studios Taco Shop.  Build a Taco Ordering API!  Yum!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## What We Look For In A Candidate
 
-Things you may want to cover:
+  1. Knowledge of Ruby on Rails.
+  2. Familiarity with Javascript.
+  2. Can work with technologies (i.e. Angular) that you may not have seen before.
+  3. Can work independently and troubleshoot issues with **minimal requirements and guidance**.
 
-* Ruby version
+## Requirements
 
-* System dependencies
+#### Step 1: Build a Ruby on Rails application that serves the provided Angular App (see /index.html)
 
-* Configuration
+  When you visit `http://localhost:3000/` you should see the Angular app!
 
-* Database creation
+#### Step 2: Build a JSON API into the app you made in Step 1 that responds to the following endpoints:
 
-* Database initialization
+  1. `GET /tacos` - Returns a list of all tacos in the database
+  2. `POST /tacos` - Creates a taco with the given parameters
+  3. `DELETE /tacos/:id` - Removes the taco with this ID from the database
 
-* How to run the test suite
+#### Step 3: Upload your completed solution to a public [Github](https://www.heroku.com/) repository so we can review.
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Step 4: Host the working solution on [Heroku](https://www.heroku.com/) and send the Heroku App URL to us for review.
 
-* Deployment instructions
+## Completely Optional Bonuses Features:
 
-* ...
+  1.  Add RSpec tests for the controller and model.
+  2.  Add Validations to the Taco model.
+  3.  Add another meat.
+  4.  Add another side.
+  5.  Add your favorite gem to the project and improve on this application.
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Known Issues
+  * The HTML file will not work if you load it in your browser as a file (e.g. file://).
